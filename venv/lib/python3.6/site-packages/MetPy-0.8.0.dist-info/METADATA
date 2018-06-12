@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: MetPy
+Version: 0.8.0
+Summary: Collection of tools for reading, visualizing andperforming calculations with weather data.
+Home-page: http://github.com/Unidata/MetPy
+Author: Ryan May, Patrick Marsh, Sean Arms, Eric Bruning
+Author-email: python-users@unidata.ucar.edu
+Maintainer: MetPy Developers
+Maintainer-email: python-users@unidata.ucar.edu
+License: BSD
+Download-URL: https://github.com/Unidata/MetPy/archive/v0.8.0.tar.gz
+Keywords: meteorology weather
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Provides-Extra: examples
+Provides-Extra: doc
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: cdm
+Requires-Dist: matplotlib (>=1.4)
+Requires-Dist: numpy (>=1.10.0)
+Requires-Dist: scipy (>=0.14)
+Requires-Dist: pint (>=0.8)
+Requires-Dist: xarray (>=0.9.6)
+Requires-Dist: enum34; python_version < "3.4"
+Provides-Extra: cdm
+Requires-Dist: pyproj (>=1.9.4); extra == 'cdm'
+Provides-Extra: dev
+Requires-Dist: ipython[all] (>=3.1); extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx (>=1.4); extra == 'doc'
+Requires-Dist: sphinx-gallery; extra == 'doc'
+Requires-Dist: doc8; extra == 'doc'
+Requires-Dist: recommonmark; extra == 'doc'
+Requires-Dist: netCDF4; extra == 'doc'
+Provides-Extra: examples
+Requires-Dist: cartopy (>=0.13.1); extra == 'examples'
+Provides-Extra: test
+Requires-Dist: pytest (>=2.4); extra == 'test'
+Requires-Dist: pytest-runner; extra == 'test'
+Requires-Dist: pytest-mpl; extra == 'test'
+Requires-Dist: pytest-flake8; extra == 'test'
+Requires-Dist: cartopy (>=0.16.0); extra == 'test'
+Requires-Dist: flake8 (>3.2.0); extra == 'test'
+Requires-Dist: flake8-builtins (!=1.4.0); extra == 'test'
+Requires-Dist: flake8-comprehensions; extra == 'test'
+Requires-Dist: flake8-copyright; extra == 'test'
+Requires-Dist: flake8-docstrings; extra == 'test'
+Requires-Dist: flake8-import-order; extra == 'test'
+Requires-Dist: flake8-mutable; extra == 'test'
+Requires-Dist: flake8-pep3101; extra == 'test'
+Requires-Dist: flake8-print; extra == 'test'
+Requires-Dist: flake8-quotes; extra == 'test'
+Requires-Dist: pep8-naming; extra == 'test'
+
+The space MetPy aims for is GEMPAK (and maybe NCL)-like functionality, in a way that plugs easily into the existing scientific Python ecosystem (numpy, scipy, matplotlib).
+
+
